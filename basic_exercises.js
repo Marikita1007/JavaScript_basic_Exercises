@@ -204,9 +204,17 @@ function toFahrenheit(){
 }
 
 //12. Write a JavaScript program to get the website URL (loading page).
+var btn = document.getElementById('btn');
+btn.addEventListener('click', (e)=> alert('The url of this page is: ' + window.location.href))
 
-
-
+//13. Write a JavaScript exercise to create a variable using a user-defined name.
+function getVal(){
+    var val = document.getElementById("input13").value
+    var n = "You named this variable as : " + val;
+    this[val] = n;
+    var exerciseThirteen = document.getElementsByClassName("exercise13")[0];
+    exerciseThirteen.innerHTML = this[val];
+}
 
 
 
